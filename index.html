@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utilities.css" />
+    <link
+      rel="shortcut icon"
+      href="data:image/png;base64,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"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="container flex bg-black">
+      <div class="left">
+        <div class="home bg-gray m-1 p-2 rounded">
+          <div class="logo">
+            <img class="invert" src="logo.svg" alt="" />
+          </div>
+          <ul>
+            <li><img class="invert" src="home.svg" alt="home" />Home</li>
+            <li><img class="invert" src="search.svg" alt="search" />Search</li>
+          </ul>
+        </div>
+        <div class="lib bg-gray rounded m-1 p-1">
+          <div class="heading">
+            <img class="invert" src="lib.svg " class="invert" alt="" />
+            <h2>Your Library</h2>
+          </div>
+          <div class="songList ">
+            <ul>
+             
+            </ul>
+          </div>
+          <div class="footer">
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/">
+                <span>Legal</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/privacy/">
+                <span>Privacy Center</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+                <span>Privacy Policy</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+                <span>Cookies</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+                <span>About Ads</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/accessibility/">
+                <span>Accessibility</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right rounded bg-gray">
+        <div class="header flex items-center space-between p-1 m-1">
+          <div class="nav">
+            <span class="material-symbols-outlined"> arrow_back_ios </span>
+            <span class="material-symbols-outlined"> arrow_forward_ios </span>
+          </div>
+          <div class="buttons">
+            <button id="btn-1">Sing up</button>
+            <button>Log in</button>
+          </div>
+        </div>
+        <div class="spotify-playlist">
+          <div class="top flex space-between m-1 p-1">
+            <div>
+              <h2>Spotify Playlists</h2>
+            </div>
+            <div class="btn">
+              <button id="btn-1">Show all</button>
+            </div>
+          </div>
+          <div class="cardContainer">
+            <div class="card">
+              <div class="play">
+                <span class="material-symbols-outlined"> play_circle </span>
+              </div>
+              <img
+                src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037"
+                alt=""
+              />
+              <h4>lofi beats</h4>
+              <p>chill beats, lofi vibes, new tracks every week...</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67706f000000024cd247278d14c2086d44413e"
+                alt=""
+              />
+              <h4>Today’s Top Hits</h4>
+              <p>chill beats, lofi vibes, new tracks every week...</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037"
+                alt=""
+              />
+              <h4>lofi beats</h4>
+              <p>chill beats, lofi vibes, new tracks every week...</p>
+            </div>
+          </div>
+          <div class="playbar">
+            <div class="seekbar">
+              <div class="circle"></div>
+            </div>
+            <div class="song-info">
+
+            </div>
+            <div class="song-btn">
+              <span class="material-symbols-outlined" id="skip-previous"> skip_previous </span>
+              <span class="material-symbols-outlined" id="play-pause"> play_arrow </span>
+              <span class="material-symbols-outlined" id="skip-next"> skip_next </span>
+          </div>
+            <div class="song-time"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
